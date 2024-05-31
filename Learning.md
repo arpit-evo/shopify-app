@@ -110,5 +110,5 @@ cd my-new-app
 ```
 2. Run the following command to start a local server for your app
 ```
-shopify app dev
+shopify app dev or npm run dev
 ```
