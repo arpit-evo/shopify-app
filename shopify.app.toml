@@ -3,7 +3,7 @@
 client_id = "7d18d9273b782a88958b2f358afcbd31"
 name = "wishlist-app"
 handle = "wishlist-app-162"
-application_url = "https://macintosh-boxes-logitech-tracks.trycloudflare.com"
+application_url = "https://madonna-qualification-broadcast-construction.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://macintosh-boxes-logitech-tracks.trycloudflare.com/auth/callback",
-  "https://macintosh-boxes-logitech-tracks.trycloudflare.com/auth/shopify/callback",
-  "https://macintosh-boxes-logitech-tracks.trycloudflare.com/api/auth/callback"
+  "https://madonna-qualification-broadcast-construction.trycloudflare.com/auth/callback",
+  "https://madonna-qualification-broadcast-construction.trycloudflare.com/auth/shopify/callback",
+  "https://madonna-qualification-broadcast-construction.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
