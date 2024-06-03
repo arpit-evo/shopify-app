@@ -12,18 +12,33 @@ import {
   TextField,
 } from "@shopify/polaris";
 import { useState } from "react";
+import db from "../db.server";
 
 export const loader = async () => {
-  let settings = {
-    name: "First App",
-    description: "First app description",
-  };
+  let settings = db.settings.findFirst();
   return json(settings);
 };
 
 export const action = async ({ request }) => {
   let settings = await request.formData();
   settings = Object.fromEntries(settings);
+
+  await db.settings.upsert({
+    where: {
+      id: "1",
+    },
+    create: {
+      id: "1",
+      name: settings.name,
+      description: settings.description,
+    },
+    update: {
+      id: "1",
+      name: settings.name,
+      description: settings.description,
+    },
+  });
+
   return json(settings);
 };
 
@@ -55,7 +70,7 @@ export default function SettingsPage() {
                 <TextField
                   label="App name"
                   name="name"
-                  value={formState.name}
+                  value={formState?.name}
                   onChange={(value) =>
                     setFormState({ ...formState, name: value })
                   }
@@ -63,7 +78,7 @@ export default function SettingsPage() {
                 <TextField
                   label="Description"
                   name="description"
-                  value={formState.description}
+                  value={formState?.description}
                   onChange={(value) =>
                     setFormState({ ...formState, description: value })
                   }
