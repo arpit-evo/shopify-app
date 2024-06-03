@@ -3,7 +3,7 @@
 client_id = "7d18d9273b782a88958b2f358afcbd31"
 name = "wishlist-app"
 handle = "wishlist-app-162"
-application_url = "https://inherited-donna-jr-apparent.trycloudflare.com"
+application_url = "https://computation-correlation-blink-cz.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://inherited-donna-jr-apparent.trycloudflare.com/auth/callback",
-  "https://inherited-donna-jr-apparent.trycloudflare.com/auth/shopify/callback",
-  "https://inherited-donna-jr-apparent.trycloudflare.com/api/auth/callback"
+  "https://computation-correlation-blink-cz.trycloudflare.com/auth/callback",
+  "https://computation-correlation-blink-cz.trycloudflare.com/auth/shopify/callback",
+  "https://computation-correlation-blink-cz.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
