@@ -100,7 +100,7 @@ npm install -g @shopify/cli
 Now init Shopify Store using this command: 
 
 ```
-shopify app init
+shopify app init  
 ```
 ## Step-3 : Start a local development server
 
