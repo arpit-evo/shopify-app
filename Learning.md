@@ -95,20 +95,54 @@ Download cli using this command
 ```
 npm install -g @shopify/cli
 ```
+
 ## Step-2 : [Create a new App](https://shopify.dev/docs/apps/build/scaffold-app)
 
-Now init Shopify Store using this command: 
+Now init Shopify Store using this command:
 
 ```
-shopify app init  
+shopify app init
 ```
+
 ## Step-3 : Start a local development server
 
-1. navigate to folder 
+1. navigate to folder
+
 ```
 cd my-new-app
 ```
+
 2. Run the following command to start a local server for your app
+
 ```
 shopify app dev or npm run dev
+```
+
+## Learning continue
+
+- Learn about how to create pages in app.
+- Learn about form handling with `remix`.
+- Understanding `loader` and `action` function for handling form.
+- We use `Form` component of `remix/node` when it `get` request then it handle with `loader` function and any method then we handle with `action` function.
+
+## [Creating Extension](https://shopify.dev/docs/apps/build/online-store/theme-app-extensions/build)
+
+- First learn what is app [block and embed block](https://shopify.dev/docs/apps/build/online-store/theme-app-extensions/configuration#app-embed-blocks).
+
+### Steps:
+
+1. Run the following command to start creating the extension:
+
+```
+shopify app generate extension
+```
+
+2. Select Theme app extension as the extension type.
+
+3. Provide a name for your extension.
+
+### Preview theme command
+
+```
+shopify app dev -- --theme <ThemeiD OR name>
 ```

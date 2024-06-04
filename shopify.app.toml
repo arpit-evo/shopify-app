@@ -3,7 +3,7 @@
 client_id = "7d18d9273b782a88958b2f358afcbd31"
 name = "wishlist-app"
 handle = "wishlist-app-162"
-application_url = "https://trading-miss-creates-edward.trycloudflare.com"
+application_url = "https://anyway-pete-pull-houston.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://trading-miss-creates-edward.trycloudflare.com/auth/callback",
-  "https://trading-miss-creates-edward.trycloudflare.com/auth/shopify/callback",
-  "https://trading-miss-creates-edward.trycloudflare.com/api/auth/callback"
+  "https://anyway-pete-pull-houston.trycloudflare.com/auth/callback",
+  "https://anyway-pete-pull-houston.trycloudflare.com/auth/shopify/callback",
+  "https://anyway-pete-pull-houston.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
